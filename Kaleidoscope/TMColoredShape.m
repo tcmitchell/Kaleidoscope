@@ -11,26 +11,46 @@
 static const int MIN_SIDES = 3;
 static const int MAX_SIDES = 7;
 
+static const double _60 = M_PI / 3.0;
+
+
 @implementation TMColoredShape
 
-- (id)initWithMaxRadius:(int)radius
+- (double)randomDouble
 {
-  int center = random() % radius + 50;
+  long rndm = random();
+  double dmax = pow(2.0, 31.0) - 1;
+  return rndm / dmax;
+}
+
+- (int)randomIntLessThan:(int)max
+{
+  return random() % max;
+}
+
+- (id)initWithRadius:(int)radius
+{
+//   int centerx = [self randomIntLessThan:radius];
+//   int centery = [self randomIntLessThan:radius];
+  int i;
 
   self = [super init];
   if (self) {
-    numPoints = 4;
+    numPoints = ([self randomIntLessThan:(MAX_SIDES + 1 - MIN_SIDES)]
+                 + MIN_SIDES);
+    a = _60 * [self randomDouble];
+    r = [self randomDouble];
+    r = 30 + (radius - 30) * r * (0.5 + 0.5 * r);
+    float xc = (float) (r * cos(a));
+    float yc = (float) (r * sin(a));
     points = calloc(numPoints, sizeof(NSPoint));
+    for (i = 0; i < numPoints; i++) {
+      double angle = i * M_PI * 2.0 / numPoints;
+      double radius = 5 + [self randomDouble] * 30;
+      points[i].x = (int) ((radius * cos(angle)) + xc);
+      points[i].y = (int) ((radius * sin(angle)) + yc);
+    }
     color = [[NSColor redColor] retain];
-
-    points[0].x = -10 + center;
-    points[0].y = -10 + center;
-    points[1].x = 10 + center;
-    points[1].y = -10 + center;
-    points[2].x = 10 + center;
-    points[2].y = 10 + center;
-    points[3].x = -10 + center;
-    points[3].y = 10 + center;
   }
   return self;
 }

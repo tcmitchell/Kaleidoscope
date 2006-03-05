@@ -11,7 +11,7 @@
   [shapes removeAllObjects];
   for (i = 0; i < numShapes; i++)
     {
-      shape = [[TMColoredShape alloc] initWithMaxRadius:25];
+      shape = [[TMColoredShape alloc] initWithRadius:500];
       [shapes addObject:shape];
       [shape release];
     }

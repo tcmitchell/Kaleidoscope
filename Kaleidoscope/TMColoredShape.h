@@ -11,12 +11,14 @@
 
 
 @interface TMColoredShape : NSObject {
+  double a;
+  double r;
   int numPoints;
   NSPointArray points;
   NSColor *color;
 }
 
-- (id)initWithMaxRadius:(int)radius;
+- (id)initWithRadius:(int)radius;
 - (void)draw;
 
 @end
