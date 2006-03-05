@@ -14,12 +14,12 @@ static const int MAX_SIDES = 7;
 static const double _60 = M_PI / 3.0;
 
 // Pastel
-static const float BRIGHTNESS_BASE = 127.0;
-static const float BRIGHTNESS_RANGE = 128.0;
+// static const float BRIGHTNESS_BASE = 127.0;
+// static const float BRIGHTNESS_RANGE = 128.0;
 
 // Bright
-// static const float BRIGHTNESS_BASE = 0.0;
-// static const float BRIGHTNESS_RANGE = 255.0;
+static const float BRIGHTNESS_BASE = 0.0;
+static const float BRIGHTNESS_RANGE = 255.0;
 
 // Dark
 // static const float BRIGHTNESS_BASE = 0.0;
