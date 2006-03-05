@@ -1,38 +1,34 @@
 #import "TMKaleidocopeView.h"
+#import "TMColoredShape.h"
 
 @implementation TMKaleidocopeView
 
+- (void)fillShapes:(int)numShapes
+{
+  int i;
+  TMColoredShape *shape;
+
+  [shapes removeAllObjects];
+  for (i = 0; i < numShapes; i++)
+    {
+      shape = [[TMColoredShape alloc] initWithMaxRadius:25];
+      [shapes addObject:shape];
+      [shape release];
+    }
+}
+
 - (id)initWithFrame:(NSRect)frameRect
 {
-	if ((self = [super initWithFrame:frameRect]) != nil) {
-		// Add initialization code here
-	}
-	return self;
+  if ((self = [super initWithFrame:frameRect]) != nil) {
+    shapes = [NSMutableArray arrayWithCapacity:10];
+    [self fillShapes:10];
+  }
+  return self;
 }
 
 - (void)drawRect:(NSRect)rect
 {
-  NSBezierPath *path;
-  NSPoint p;
-
-  path = [[NSBezierPath alloc] init];
-  [path setLineWidth:2.0];
-  p.x = 10;
-  p.y = 10;
-  [path moveToPoint:p];
-  p.y = 50;
-  [path lineToPoint:p];
-  p.x = 50;
-  [path lineToPoint:p];
-  p.y = 10;
-  [path lineToPoint:p];
-  [path closePath];
-
-  [[NSColor blackColor] set];
-  [path stroke];
-  [[NSColor redColor] set];
-  [path fill];
-  [path release];
+  [shapes makeObjectsPerformSelector:@selector(draw)];
 }
 
 @end
