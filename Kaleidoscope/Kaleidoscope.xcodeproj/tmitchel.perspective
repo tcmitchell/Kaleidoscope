@@ -256,10 +256,17 @@
 						<key>PBXSmartGroupTreeModuleOutlineStateKey_v7</key>
 						<dict>
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
-							<array/>
+							<array>
+								<string>29B97314FDCFA39411CA2CEA</string>
+								<string>080E96DDFE201D6D7F000001</string>
+								<string>29B97315FDCFA39411CA2CEA</string>
+								<string>1C37FBAC04509CD000000102</string>
+							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
+									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -295,7 +302,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>4C5123CB09BA592500B0CB2A</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>TMKaleidocopeView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -303,7 +310,15 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>4C5123CC09BA592500B0CB2A</string>
 										<key>PBXProjectModuleLabel</key>
-										<string></string>
+										<string>TMKaleidocopeView.m</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>4C51240C09BA63CC00B0CB2A</string>
+										<key>history</key>
+										<array>
+											<string>4C51240509BA62D800B0CB2A</string>
+										</array>
 									</dict>
 									<key>SplitCount</key>
 									<string>1</string>
@@ -316,16 +331,16 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {603, -2}}</string>
+								<string>{{0, 0}, {603, 133}}</string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>-2pt</string>
+							<string>133pt</string>
 						</dict>
 						<dict>
 							<key>Proportion</key>
-							<string>443pt</string>
+							<string>310pt</string>
 							<key>Tabs</key>
 							<array>
 								<dict>
@@ -339,7 +354,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {603, 416}}</string>
+										<string>{{10, 27}, {603, 283}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -398,11 +413,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>4C5123CD09BA592500B0CB2A</string>
+				<string>4C5123E809BA5DBD00B0CB2A</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>4C5123CE09BA592500B0CB2A</string>
+				<string>4C5123E909BA5DBD00B0CB2A</string>
 				<string>4C5123CB09BA592500B0CB2A</string>
-				<string>4C5123CF09BA592500B0CB2A</string>
+				<string>4C5123EA09BA5DBD00B0CB2A</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -501,7 +516,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>4C5123D009BA592500B0CB2A</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>TMKaleidocopeView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -509,7 +524,15 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>4C5123D109BA592500B0CB2A</string>
 										<key>PBXProjectModuleLabel</key>
-										<string></string>
+										<string>TMKaleidocopeView.m</string>
+										<key>_historyCapacity</key>
+										<integer>0</integer>
+										<key>bookmark</key>
+										<string>4C51240D09BA63CC00B0CB2A</string>
+										<key>history</key>
+										<array>
+											<string>4C51240609BA62D800B0CB2A</string>
+										</array>
 									</dict>
 									<key>SplitCount</key>
 									<string>1</string>
@@ -551,7 +574,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {0, -27}}</string>
+										<string>{{10, 27}, {604, 414}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -633,14 +656,14 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>4C5123D209BA592500B0CB2A</string>
+				<string>4C5123EB09BA5DBD00B0CB2A</string>
 				<string>1CA23EE50692099D00951B8B</string>
-				<string>4C5123D309BA592500B0CB2A</string>
+				<string>4C5123EC09BA5DBD00B0CB2A</string>
 				<string>4C5123D009BA592500B0CB2A</string>
-				<string>4C5123D409BA592500B0CB2A</string>
+				<string>4C5123ED09BA5DBD00B0CB2A</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 				<string>1CA23EE80692099D00951B8B</string>
-				<string>4C5123D509BA592500B0CB2A</string>
+				<string>4C5123EE09BA5DBD00B0CB2A</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.buildAndRun</string>
@@ -654,14 +677,17 @@
 				<string>debug</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
 				<string>debugger-fix-and-continue</string>
+				<string>NSToolbarSpaceItem</string>
 				<string>debugger-restart-executable</string>
 				<string>debugger-pause</string>
 				<string>debugger-continue</string>
 				<string>debugger-step-over</string>
 				<string>debugger-step-into</string>
 				<string>debugger-step-out</string>
-				<string>debugger-step-instruction</string>
 				<string>NSToolbarFlexibleSpaceItem</string>
+				<string>com.apple.ide.XCBreakpointsToolbarItem</string>
+				<string>servicesModulebreakpoints</string>
+				<string>debugger-show-console-window</string>
 			</array>
 			<key>ControllerClassBaseName</key>
 			<string>PBXDebugSessionModule</string>
@@ -670,7 +696,7 @@
 			<key>Identifier</key>
 			<string>perspective.debug</string>
 			<key>IsVertical</key>
-			<integer>1</integer>
+			<true/>
 			<key>Layout</key>
 			<array>
 				<dict>
@@ -689,7 +715,7 @@
 					<key>Module</key>
 					<string>PBXDebugCLIModule</string>
 					<key>Proportion</key>
-					<string>0%</string>
+					<string>0pt</string>
 				</dict>
 				<dict>
 					<key>ContentConfiguration</key>
@@ -708,8 +734,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {395, 213}}</string>
-									<string>{{395, 0}, {415, 213}}</string>
+									<string>{{0, 0}, {395, 214}}</string>
+									<string>{{395, 0}, {415, 214}}</string>
 								</array>
 							</dict>
 							<key>VerticalSplitView</key>
@@ -724,8 +750,8 @@
 								<string>yes</string>
 								<key>sizes</key>
 								<array>
-									<string>{{0, 0}, {810, 213}}</string>
-									<string>{{0, 213}, {810, 225}}</string>
+									<string>{{0, 0}, {810, 214}}</string>
+									<string>{{0, 214}, {810, 227}}</string>
 								</array>
 							</dict>
 						</dict>
@@ -747,12 +773,12 @@
 						<key>DebugSTDIOWindowFrame</key>
 						<string>{{200, 200}, {500, 300}}</string>
 						<key>Frame</key>
-						<string>{{0, 7}, {810, 438}}</string>
+						<string>{{0, 5}, {810, 441}}</string>
 					</dict>
 					<key>Module</key>
 					<string>PBXDebugSessionModule</string>
 					<key>Proportion</key>
-					<string>443pt</string>
+					<string>441pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -760,18 +786,26 @@
 			<key>ServiceClasses</key>
 			<array>
 				<string>XCModuleDock</string>
-				<string>XCModuleDock</string>
 				<string>PBXDebugCLIModule</string>
 				<string>PBXDebugSessionModule</string>
+				<string>PBXDebugProcessAndThreadModule</string>
+				<string>PBXDebugProcessViewModule</string>
+				<string>PBXDebugThreadViewModule</string>
+				<string>PBXDebugStackFrameViewModule</string>
+				<string>PBXNavigatorGroup</string>
 				<string>XCConsole</string>
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>1CC8E6A5069209BD00BB180A</string>
-				<string>1CC8E6A6069209BD00BB180A</string>
+				<string>4C5123F809BA629E00B0CB2A</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>1CC8E6A7069209BD00BB180A</string>
+				<string>4C5123F909BA629E00B0CB2A</string>
+				<string>4C5123FA09BA629E00B0CB2A</string>
+				<string>4C5123FB09BA629E00B0CB2A</string>
+				<string>4C5123FC09BA629E00B0CB2A</string>
+				<string>4C5123FD09BA629E00B0CB2A</string>
+				<string>4C5123FE09BA629E00B0CB2A</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debug</string>
@@ -801,7 +835,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>/Users/tmitchel/Cocoa/src/Kaleidoscope/Kaleidoscope.xcodeproj</string>
+		<string>4C5123FF09BA629E00B0CB2A</string>
+		<string>4C51240009BA629E00B0CB2A</string>
+		<string>4C5123FE09BA629E00B0CB2A</string>
+		<string>/Users/tmitchel/Cocoa/src/kscope/Kaleidoscope/Kaleidoscope.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>235 335 810 487 0 0 1280 832 </string>
