@@ -1,7 +1,4 @@
 {
-    IBClasses = (
-        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
-        {CLASS = TMKaleidocopeView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
-    ); 
+    IBClasses = ({CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }); 
     IBVersion = 1; 
 }
