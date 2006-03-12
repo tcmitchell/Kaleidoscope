@@ -6,5 +6,10 @@
 @interface TMKaleidocopeView : NSView
 {
   NSMutableArray *shapes;
+  BOOL shadow;
 }
+
+- (void)setShadow:(BOOL)flag;
+- (BOOL)hasShadow;
+
 @end

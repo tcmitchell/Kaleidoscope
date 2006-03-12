@@ -39,6 +39,7 @@ static const double NSHAPES_PER_PIXEL = .0005;
 {
   if ((self = [super initWithFrame:frameRect]) != nil) {
     shapes = [[NSMutableArray arrayWithCapacity:40] retain];
+    shadow = YES;
   }
   return self;
 }
@@ -47,11 +48,23 @@ static const double NSHAPES_PER_PIXEL = .0005;
 {
   NSRect bounds;
   NSAffineTransform *transform;
+  NSShadow *theShadow = nil;
 
   /* fill with black */
   bounds = [self bounds];
-  [[NSColor blackColor] set];
+  [[NSColor whiteColor] set];
   [NSBezierPath fillRect:bounds];
+
+  [NSGraphicsContext saveGraphicsState];
+
+  if (shadow) {
+    NSShadow *theShadow = [[NSShadow alloc] init];
+    [theShadow setShadowOffset:NSMakeSize(10.0, -10.0)];
+    [theShadow setShadowBlurRadius:3.0];
+    [theShadow setShadowColor:[[NSColor blackColor]
+                                colorWithAlphaComponent:0.3]];
+    [theShadow set];
+  }
 
   int radius = MIN(bounds.size.width, bounds.size.height) / 2;
   [self fillShapes:radius];
@@ -83,6 +96,19 @@ static const double NSHAPES_PER_PIXEL = .0005;
     }
     [transform scaleXBy:1.0 yBy:-1.0];
   }
+
+  [NSGraphicsContext restoreGraphicsState];
+  [theShadow release];
+}
+
+- (void)setShadow:(BOOL)flag
+{
+  shadow = flag;
+}
+
+- (BOOL)hasShadow
+{
+  return shadow;
 }
 
 @end
