@@ -3,13 +3,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class MyDocument;
+
 @interface TMKaleidocopeView : NSView
 {
   NSMutableArray *shapes;
-  BOOL shadow;
+  IBOutlet MyDocument *document;
 }
-
-- (void)setShadow:(BOOL)flag;
-- (BOOL)hasShadow;
-
 @end

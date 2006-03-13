@@ -17,7 +17,7 @@
     
         // Add your subclass-specific initialization here.
         // If an error occurs here, send a [self release] message and return nil.
-    
+      shadowed = NO;
     }
     return self;
 }
@@ -51,6 +51,16 @@
     // For applications targeted for Tiger or later systems, you should use the new Tiger API readFromData:ofType:error:.  In this case you can also choose to override -readFromURL:ofType:error: or -readFromFileWrapper:ofType:error: instead.
     
     return YES;
+}
+
+- (BOOL)shadowed
+{
+  return shadowed;
+}
+
+- (void)setShadowed:(BOOL)flag
+{
+  shadowed = flag;
 }
 
 @end

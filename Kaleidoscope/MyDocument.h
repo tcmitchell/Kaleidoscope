@@ -1,3 +1,4 @@
+/* -*- Mode:ObjC -*- */
 //
 //  MyDocument.h
 //  Kaleidoscope
@@ -11,5 +12,10 @@
 
 @interface MyDocument : NSDocument
 {
+  BOOL shadowed;
 }
+
+- (BOOL)shadowed;
+- (void)setShadowed:(BOOL)flag;
+
 @end

@@ -1,5 +1,6 @@
 #import "TMKaleidocopeView.h"
 #import "TMColoredShape.h"
+#import "MyDocument.h"
 
 static const double NSHAPES_PER_PIXEL = .0005;
 
@@ -39,7 +40,6 @@ static const double NSHAPES_PER_PIXEL = .0005;
 {
   if ((self = [super initWithFrame:frameRect]) != nil) {
     shapes = [[NSMutableArray arrayWithCapacity:40] retain];
-    shadow = YES;
   }
   return self;
 }
@@ -57,7 +57,7 @@ static const double NSHAPES_PER_PIXEL = .0005;
 
   [NSGraphicsContext saveGraphicsState];
 
-  if (shadow) {
+  if ([document shadowed]) {
     NSShadow *theShadow = [[NSShadow alloc] init];
     [theShadow setShadowOffset:NSMakeSize(10.0, -10.0)];
     [theShadow setShadowBlurRadius:3.0];
@@ -90,7 +90,7 @@ static const double NSHAPES_PER_PIXEL = .0005;
       [transform rotateByRadians:(M_PI * 2.0 / 3.0)];
       [NSGraphicsContext saveGraphicsState];
       [transform concat];
-      [clip setClip];
+      [clip addClip];
       [shapes makeObjectsPerformSelector:@selector(draw)];
       [NSGraphicsContext restoreGraphicsState];
     }
@@ -99,16 +99,6 @@ static const double NSHAPES_PER_PIXEL = .0005;
 
   [NSGraphicsContext restoreGraphicsState];
   [theShadow release];
-}
-
-- (void)setShadow:(BOOL)flag
-{
-  shadow = flag;
-}
-
-- (BOOL)hasShadow
-{
-  return shadow;
 }
 
 @end

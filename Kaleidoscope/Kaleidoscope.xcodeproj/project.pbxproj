@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4CE2C60109C4B6FE003158C7 /* TMColoredShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2C5FE09C4B6FE003158C7 /* TMColoredShape.m */; };
 		4CE2C60209C4B6FE003158C7 /* TMKaleidocopeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2C60009C4B6FE003158C7 /* TMKaleidocopeView.m */; };
+		4CE2C62209C51B1D003158C7 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CE2C62109C51B1D003158C7 /* AppController.m */; };
 		8D15AC2C0486D014006FF6A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B9FDCFA73011CA2CEA /* Credits.rtf */; };
 		8D15AC2D0486D014006FF6A4 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B6FDCFA73011CA2CEA /* MainMenu.nib */; };
 		8D15AC2E0486D014006FF6A4 /* MyDocument.nib in Resources */ = {isa = PBXBuildFile; fileRef = 2A37F4B4FDCFA73011CA2CEA /* MyDocument.nib */; };
@@ -50,6 +51,8 @@
 		4CE2C5FE09C4B6FE003158C7 /* TMColoredShape.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TMColoredShape.m; sourceTree = "<group>"; };
 		4CE2C5FF09C4B6FE003158C7 /* TMKaleidocopeView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TMKaleidocopeView.h; sourceTree = "<group>"; };
 		4CE2C60009C4B6FE003158C7 /* TMKaleidocopeView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TMKaleidocopeView.m; sourceTree = "<group>"; };
+		4CE2C62009C51B1D003158C7 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		4CE2C62109C51B1D003158C7 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		8D15AC360486D014006FF6A4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D15AC370486D014006FF6A4 /* Kaleidoscope.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaleidoscope.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -113,6 +116,8 @@
 				4CE2C60009C4B6FE003158C7 /* TMKaleidocopeView.m */,
 				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
 				2A37F4ACFDCFA73011CA2CEA /* MyDocument.m */,
+				4CE2C62009C51B1D003158C7 /* AppController.h */,
+				4CE2C62109C51B1D003158C7 /* AppController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				4CE2C60109C4B6FE003158C7 /* TMColoredShape.m in Sources */,
 				4CE2C60209C4B6FE003158C7 /* TMKaleidocopeView.m in Sources */,
+				4CE2C62209C51B1D003158C7 /* AppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
