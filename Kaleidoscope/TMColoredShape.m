@@ -95,9 +95,16 @@ static const int COLOR_STEPS = 32;
       points[i].x = (int) ((radius * cos(angle)) + xc);
       points[i].y = (int) ((radius * sin(angle)) + yc);
     }
-    color = [self randomColor];
+    color = [[self randomColor] retain];
   }
   return self;
+}
+
+- (void)dealloc
+{
+  free(points);
+  [color release];
+  [super dealloc];
 }
 
 - (void)draw

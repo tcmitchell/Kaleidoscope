@@ -6,6 +6,28 @@ static const double NSHAPES_PER_PIXEL = .0005;
 
 @implementation TMKaleidocopeView
 
+- (void)fillShapes:(int)newRadius
+{
+  int i;
+  TMColoredShape *shape;
+  int numShapes;
+  NSMutableArray *newShapes;
+
+  numShapes = (int)lround(NSHAPES_PER_PIXEL * newRadius * newRadius * M_PI);
+  newShapes = [NSMutableArray arrayWithCapacity:numShapes];
+  for (i = 0; i < numShapes; i++)
+    {
+      shape = [[TMColoredShape alloc] initWithRadius:newRadius - 25];
+      [newShapes addObject:shape];
+      [shape release];
+    }
+
+  NSMutableArray *tmpShapes;
+  tmpShapes = shapes;
+  shapes = [newShapes retain];
+  [tmpShapes release];
+}
+
 - (void)awakeFromNib
 {
   [NSTimer scheduledTimerWithTimeInterval:4.0
@@ -17,29 +39,19 @@ static const double NSHAPES_PER_PIXEL = .0005;
 
 - (void)redrawTimerDidFire:(NSTimer *)aTimer
 {
+  NSRect bounds;
+  int radius;
+
+  bounds = [self bounds];
+  radius = MIN(bounds.size.width, bounds.size.height) / 2;
+  [self fillShapes:radius];
   [self setNeedsDisplay:YES];
-}
-
-- (void)fillShapes:(int)newRadius
-{
-  int i;
-  TMColoredShape *shape;
-  int numShapes;
-
-  numShapes = (int)lround(NSHAPES_PER_PIXEL * newRadius * newRadius * M_PI);
-  [shapes removeAllObjects];
-  for (i = 0; i < numShapes; i++)
-    {
-      shape = [[TMColoredShape alloc] initWithRadius:newRadius - 25];
-      [shapes addObject:shape];
-      [shape release];
-    }
 }
 
 - (id)initWithFrame:(NSRect)frameRect
 {
   if ((self = [super initWithFrame:frameRect]) != nil) {
-    shapes = [[NSMutableArray arrayWithCapacity:40] retain];
+    [self redrawTimerDidFire:nil];
   }
   return self;
 }
@@ -67,7 +79,6 @@ static const double NSHAPES_PER_PIXEL = .0005;
   }
 
   int radius = MIN(bounds.size.width, bounds.size.height) / 2;
-  [self fillShapes:radius];
 
   transform = [NSAffineTransform transform];
   [transform translateXBy:(bounds.size.width / 2) yBy:(bounds.size.height / 2)];
