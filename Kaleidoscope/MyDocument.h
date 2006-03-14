@@ -13,9 +13,13 @@
 @interface MyDocument : NSDocument
 {
   BOOL shadowed;
+  float shapeDensity;
 }
 
 - (BOOL)shadowed;
 - (void)setShadowed:(BOOL)flag;
+
+- (float)shapeDensity;
+- (void)setShapeDensity:(float)density;
 
 @end

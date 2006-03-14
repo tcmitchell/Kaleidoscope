@@ -18,6 +18,7 @@
         // Add your subclass-specific initialization here.
         // If an error occurs here, send a [self release] message and return nil.
       shadowed = NO;
+      shapeDensity = 50.0;
     }
     return self;
 }
@@ -61,6 +62,16 @@
 - (void)setShadowed:(BOOL)flag
 {
   shadowed = flag;
+}
+
+- (float)shapeDensity
+{
+  return shapeDensity;
+}
+
+- (void)setShapeDensity:(float)density
+{
+  shapeDensity = density;
 }
 
 @end

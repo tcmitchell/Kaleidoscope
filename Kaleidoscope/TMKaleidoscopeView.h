@@ -5,7 +5,7 @@
 
 @class MyDocument;
 
-@interface TMKaleidocopeView : NSView
+@interface TMKaleidoscopeView : NSView
 {
   NSMutableArray *shapes;
   IBOutlet MyDocument *document;

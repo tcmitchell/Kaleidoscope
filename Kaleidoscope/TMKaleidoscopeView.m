@@ -1,10 +1,8 @@
-#import "TMKaleidocopeView.h"
+#import "TMKaleidoscopeView.h"
 #import "TMColoredShape.h"
 #import "MyDocument.h"
 
-static const double NSHAPES_PER_PIXEL = .0005;
-
-@implementation TMKaleidocopeView
+@implementation TMKaleidoscopeView
 
 - (void)fillShapes:(int)newRadius
 {
@@ -13,7 +11,8 @@ static const double NSHAPES_PER_PIXEL = .0005;
   int numShapes;
   NSMutableArray *newShapes;
 
-  numShapes = (int)lround(NSHAPES_PER_PIXEL * newRadius * newRadius * M_PI);
+  numShapes = (int)lround([document shapeDensity] * .00001
+                          * newRadius * newRadius * M_PI);
   newShapes = [NSMutableArray arrayWithCapacity:numShapes];
   for (i = 0; i < numShapes; i++)
     {
