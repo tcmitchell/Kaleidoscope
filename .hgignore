@@ -1,0 +1,7 @@
+syntax: glob
+*~
+*.perspectivev3
+*.pbxuser
+
+syntax: regexp
+build
